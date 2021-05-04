@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="nimValue" type="id" />
+    <item name="namaValue" type="id" />
+    <item name="kelasValue" type="id" />
+    <item name="Submit" type="id" />
+    <item name="btnrst" type="id" />
+</resources>

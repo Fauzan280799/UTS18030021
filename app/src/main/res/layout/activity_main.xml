@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <!---Untuk Mengatur Constraint/Tampilan Layout Tabel Dan Pembuatan Bagan Tabel-->
+
+    <!---Berikut Membuat Tabel Text View dan penempatan layoutnya-->
+    <TextView
+        android:id="@+id/Judul"
+        android:layout_width="402dp"
+        android:layout_height="59dp"
+        android:text="Ujian Tengah Semester"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.201"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.045" />
+
+    <TextView
+        android:id="@+id/Pilihan"
+        android:layout_width="388dp"
+        android:layout_height="25dp"
+        android:text="Silahkan Pilih Kelas"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.189"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.334" />
+
+    <!---Membuat Tabel Plain Text dan penempatan layoutnya-->
+    <EditText
+        android:id="@+id/Nim"
+        android:layout_width="402dp"
+        android:layout_height="59dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Nim"
+        android:textAlignment="viewStart"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.21"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.144" />
+
+    <EditText
+        android:id="@+id/Nama"
+        android:layout_width="402dp"
+        android:layout_height="59dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Nama Mahasiswa"
+        android:textAlignment="viewStart"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.201"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.249" />
+
+    <!---Membuat Bagan Pengelompokan Button Menggunakkan RadioGroup dan penempatan layoutnya serta memasukkan Radio Button-->
+    <RadioGroup
+        android:id="@+id/Kelas"
+        android:layout_width="403dp"
+        android:layout_height="86dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.21"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.423">
+
+        <RadioButton
+            android:id="@+id/A"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kelas A"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/B"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kelas B"
+            android:textSize="18sp" />
+    </RadioGroup>
+
+    <!---Membuat tombol button send dan penempatan layout-->
+    <Button
+        android:id="@+id/Send"
+        android:layout_width="543dp"
+        android:layout_height="79dp"
+        android:text="Send Data"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.559" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
